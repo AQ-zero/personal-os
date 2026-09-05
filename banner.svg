@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif" role="img" aria-label="Personal OS · 成长操作系统">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#191811"/>
+      <stop offset="1" stop-color="#10140E"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="50%">
+      <stop offset="0" stop-color="#2E5A49" stop-opacity="0.5"/>
+      <stop offset="0.6" stop-color="#2E5A49" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#2E5A49" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="400" fill="url(#bg)"/>
+  <rect width="1200" height="400" fill="url(#glow)"/>
+  <rect x="16.5" y="16.5" width="1167" height="367" rx="15" fill="none" stroke="#84B4A1" stroke-opacity="0.15"/>
+  <g transform="translate(600 116)">
+    <path d="M0 -32 L6.5 -6.5 L32 0 L6.5 6.5 L0 32 L-6.5 6.5 L-32 0 L-6.5 -6.5 Z" fill="#84B4A1"/>
+    <circle r="2.6" fill="#F2F0EA"/>
+  </g>
+  <text x="600" y="224" text-anchor="middle" font-family="Georgia,'Times New Roman','Songti SC',serif" font-size="84" font-weight="500" fill="#ECEAE2" letter-spacing="1.5">Personal OS<tspan fill="#84B4A1">.</tspan></text>
+  <text x="600" y="270" text-anchor="middle" font-size="22" fill="#B9B3A2" letter-spacing="12">成长操作系统</text>
+  <line x1="524" y1="312" x2="676" y2="312" stroke="#84B4A1" stroke-opacity="0.35"/>
+  <text x="600" y="346" text-anchor="middle" font-size="14.5" fill="#8C8776" letter-spacing="2.5">本地优先　·　自带模型　·　一次买断　·　数据主权</text>
+</svg>
