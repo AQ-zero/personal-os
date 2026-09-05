@@ -363,7 +363,7 @@ footer{border-top:1px solid var(--line-2);padding:44px 0;margin-top:20px}
     </div>
     <div class="cta reveal" style="margin-top:34px">
       <a id="dl-win" class="btn btn-primary" href="download/Personal-OS-Setup.exe" download>下载 Windows</a>
-      <span class="btn btn-ghost btn-soon" aria-disabled="true">macOS · 即将支持</span>
+      <a id="dl-mac" class="btn btn-ghost" href="download/Personal-OS.dmg" download>下载 macOS</a>
     </div>
   </div>
 </section>
@@ -457,10 +457,15 @@ footer{border-top:1px solid var(--line-2);padding:44px 0;margin-top:20px}
 
   // Download target: use GitHub Releases when the site is live; keep the local file when testing on file:// or localhost.
   var GH_USER='AQ-zero', GH_REPO='personal-os';
-  var RELEASE='https://github.com/'+GH_USER+'/'+GH_REPO+'/releases/latest/download/Personal-OS-Setup.exe';
+  var base='https://github.com/'+GH_USER+'/'+GH_REPO+'/releases/latest/download/';
   var isLocal=location.protocol==='file:'||/^(localhost|127\.0\.0\.1)$/.test(location.hostname);
+  var live=!isLocal && GH_USER!=='__GH_USER__';
   var winBtn=document.getElementById('dl-win');
-  if(winBtn && !isLocal && GH_USER!=='__GH_USER__'){ winBtn.href=RELEASE; }
+  var macBtn=document.getElementById('dl-mac');
+  if(live){
+    if(winBtn) winBtn.href=base+'Personal-OS-Setup.exe';
+    if(macBtn) macBtn.href=base+'Personal-OS.dmg';
+  }
 })();
 </script>
 </body>
