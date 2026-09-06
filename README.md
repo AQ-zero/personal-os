@@ -2,6 +2,8 @@
 
 <img src="./cover.svg" alt="Personal OS" width="100%">
 
+# Personal OS ✦
+
 <p><b>English</b> &nbsp;·&nbsp; <a href="./README.zh.md">中文</a></p>
 
 <p>

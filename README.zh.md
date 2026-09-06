@@ -2,7 +2,7 @@
 
 <img src="./cover.svg" alt="Personal OS" width="100%">
 
-
+# Personal OS ✦
 
 <p><a href="./README.md">English</a> &nbsp;·&nbsp; <b>中文</b></p>
 
