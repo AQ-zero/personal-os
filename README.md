@@ -2,23 +2,21 @@
 
 <img src="./cover.svg" alt="Personal OS" width="100%">
 
-
-
 <p><b>English</b> &nbsp;·&nbsp; <a href="./README.zh.md">中文</a></p>
 
 <p>
-  <img src="https://img.shields.io/github/v/release/AQ-zero/personal-os?color=2E5A49&label=release" alt="release">
-  <img src="https://img.shields.io/github/downloads/AQ-zero/personal-os/total?color=2E5A49&label=downloads" alt="downloads">
+  <img src="https://img.shields.io/github/v/release/AQ-zero/personal-os-harness?color=2E5A49&label=release" alt="release">
+  <img src="https://img.shields.io/github/downloads/AQ-zero/personal-os-harness/total?color=2E5A49&label=downloads" alt="downloads">
   <img src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS-2E5A49" alt="platform">
   <img src="https://img.shields.io/badge/data-100%25%20local-2E5A49" alt="local-first">
 </p>
 
 <p>
-  <a href="https://github.com/AQ-zero/personal-os/releases/latest/download/Personal-OS-Setup.exe"><img src="https://img.shields.io/badge/⬇%20Download-Windows-2E5A49?style=for-the-badge" alt="Download for Windows"></a>
+  <a href="https://github.com/AQ-zero/personal-os-harness/releases/latest/download/Personal-OS-Setup.exe"><img src="https://img.shields.io/badge/⬇%20Download-Windows-2E5A49?style=for-the-badge" alt="Download for Windows"></a>
   &nbsp;
-  <a href="https://github.com/AQ-zero/personal-os/releases/latest/download/Personal-OS.dmg"><img src="https://img.shields.io/badge/⬇%20Download-macOS-3A4A3F?style=for-the-badge" alt="Download for macOS"></a>
+  <a href="https://github.com/AQ-zero/personal-os-harness/releases/latest/download/Personal-OS.dmg"><img src="https://img.shields.io/badge/⬇%20Download-macOS-3A4A3F?style=for-the-badge" alt="Download for macOS"></a>
   &nbsp;
-  <a href="https://aq-zero.github.io/personal-os"><img src="https://img.shields.io/badge/🌐%20Website-visit-8A9A5B?style=for-the-badge" alt="Website"></a>
+  <a href="https://aq-zero.github.io/personal-os-harness"><img src="https://img.shields.io/badge/🌐%20Website-visit-8A9A5B?style=for-the-badge" alt="Website"></a>
 </p>
 
 **Not another habit tracker. Your lifelong Growth Operating System.**
@@ -113,7 +111,7 @@ Export JSON in one click, or copy that one local database file to the new machin
 
 **Live your life as a system that compounds.**
 
-[⬇ Windows](https://github.com/AQ-zero/personal-os/releases/latest/download/Personal-OS-Setup.exe) &nbsp;·&nbsp; [⬇ macOS](https://github.com/AQ-zero/personal-os/releases/latest/download/Personal-OS.dmg) &nbsp;·&nbsp; [🌐 Website](https://aq-zero.github.io/personal-os)
+[⬇ Windows](https://github.com/AQ-zero/personal-os-harness/releases/latest/download/Personal-OS-Setup.exe) &nbsp;·&nbsp; [⬇ macOS](https://github.com/AQ-zero/personal-os-harness/releases/latest/download/Personal-OS.dmg) &nbsp;·&nbsp; [🌐 Website](https://aq-zero.github.io/personal-os-harness)
 
 <sub>© 2026 Personal OS · Built by a one-person company</sub>
 

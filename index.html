@@ -4,6 +4,9 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Personal OS — the compounding personal-growth system</title>
+<link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="./favicon.ico" sizes="any" />
+<link rel="apple-touch-icon" href="./apple-touch-icon.png" />
 <meta name="description" content="Not another habit tracker. It's your lifelong Growth Operating System: reverse-engineer your North Star from your eulogy, sharpen judgment with decision calibration, turn envy/anger/flow into mission clues. Data stays local, bring your own model key, never in the cloud." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -543,7 +546,7 @@ footer{border-top:1px solid var(--line-2);padding:44px 0;margin-top:20px}
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
 
   /* download: GitHub Releases when live; local file when testing on file:// or localhost */
-  var GH_USER='AQ-zero', GH_REPO='personal-os';
+  var GH_USER='AQ-zero', GH_REPO='personal-os-harness';
   var base='https://github.com/'+GH_USER+'/'+GH_REPO+'/releases/latest/download/';
   var isLocal=location.protocol==='file:'||/^(localhost|127\.0\.0\.1)$/.test(location.hostname);
   var liveDl=!isLocal && GH_USER!=='__GH_USER__';

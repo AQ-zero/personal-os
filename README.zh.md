@@ -2,23 +2,21 @@
 
 <img src="./cover.svg" alt="Personal OS" width="100%">
 
-
-
 <p><a href="./README.md">English</a> &nbsp;·&nbsp; <b>中文</b></p>
 
 <p>
-  <img src="https://img.shields.io/github/v/release/AQ-zero/personal-os?color=2E5A49&label=release" alt="release">
-  <img src="https://img.shields.io/github/downloads/AQ-zero/personal-os/total?color=2E5A49&label=downloads" alt="downloads">
+  <img src="https://img.shields.io/github/v/release/AQ-zero/personal-os-harness?color=2E5A49&label=release" alt="release">
+  <img src="https://img.shields.io/github/downloads/AQ-zero/personal-os-harness/total?color=2E5A49&label=downloads" alt="downloads">
   <img src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS-2E5A49" alt="platform">
   <img src="https://img.shields.io/badge/data-100%25%20local-2E5A49" alt="local-first">
 </p>
 
 <p>
-  <a href="https://github.com/AQ-zero/personal-os/releases/latest/download/Personal-OS-Setup.exe"><img src="https://img.shields.io/badge/⬇%20下载-Windows-2E5A49?style=for-the-badge" alt="下载 Windows"></a>
+  <a href="https://github.com/AQ-zero/personal-os-harness/releases/latest/download/Personal-OS-Setup.exe"><img src="https://img.shields.io/badge/⬇%20下载-Windows-2E5A49?style=for-the-badge" alt="下载 Windows"></a>
   &nbsp;
-  <a href="https://github.com/AQ-zero/personal-os/releases/latest/download/Personal-OS.dmg"><img src="https://img.shields.io/badge/⬇%20下载-macOS-3A4A3F?style=for-the-badge" alt="下载 macOS"></a>
+  <a href="https://github.com/AQ-zero/personal-os-harness/releases/latest/download/Personal-OS.dmg"><img src="https://img.shields.io/badge/⬇%20下载-macOS-3A4A3F?style=for-the-badge" alt="下载 macOS"></a>
   &nbsp;
-  <a href="https://aq-zero.github.io/personal-os"><img src="https://img.shields.io/badge/🌐%20官网-访问-8A9A5B?style=for-the-badge" alt="官网"></a>
+  <a href="https://aq-zero.github.io/personal-os-harness"><img src="https://img.shields.io/badge/🌐%20官网-访问-8A9A5B?style=for-the-badge" alt="官网"></a>
 </p>
 
 **不是又一个打卡 App。是你一生的成长操作系统。**
@@ -113,7 +111,7 @@ Personal OS 是一个**本地优先、自带复利闭环的桌面应用**。它�
 
 **把人生，活成一个会复利的系统。**
 
-[⬇ Windows](https://github.com/AQ-zero/personal-os/releases/latest/download/Personal-OS-Setup.exe) &nbsp;·&nbsp; [⬇ macOS](https://github.com/AQ-zero/personal-os/releases/latest/download/Personal-OS.dmg) &nbsp;·&nbsp; [🌐 官网](https://aq-zero.github.io/personal-os)
+[⬇ Windows](https://github.com/AQ-zero/personal-os-harness/releases/latest/download/Personal-OS-Setup.exe) &nbsp;·&nbsp; [⬇ macOS](https://github.com/AQ-zero/personal-os-harness/releases/latest/download/Personal-OS.dmg) &nbsp;·&nbsp; [🌐 官网](https://aq-zero.github.io/personal-os-harness)
 
 <sub>© 2026 Personal OS · 一人公司出品</sub>
 
