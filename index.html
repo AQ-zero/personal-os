@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="zh" data-theme="">
+<html lang="en" data-theme="">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Personal OS —— 会复利的个人成长系统</title>
-<meta name="description" content="不是又一个打卡 App。是你一生的成长操作系统：从讣告倒推北极星，用决策校准练判断，用嫉妒/愤怒/心流找使命。数据全在本地，自带模型密钥，永不上云。" />
+<title>Personal OS — the compounding personal-growth system</title>
+<meta name="description" content="Not another habit tracker. It's your lifelong Growth Operating System: reverse-engineer your North Star from your eulogy, sharpen judgment with decision calibration, turn envy/anger/flow into mission clues. Data stays local, bring your own model key, never in the cloud." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" />
@@ -53,8 +53,9 @@ header.nav{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--b
 .nav-links a{font-size:14px;color:var(--muted)}
 .nav-links a:hover{color:var(--ink)}
 .nav-right{margin-left:auto;display:flex;align-items:center;gap:10px}
-.icon-btn{width:36px;height:36px;display:grid;place-items:center;border-radius:9px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}
+.icon-btn{width:36px;height:36px;display:grid;place-items:center;border-radius:9px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer;font-family:var(--sans)}
 .icon-btn:hover{color:var(--ink);border-color:var(--pine)}
+#langBtn{width:auto;padding:0 12px;font-size:13px;font-weight:600;letter-spacing:.02em}
 #navToggle{display:none}
 
 /* hero */
@@ -189,8 +190,7 @@ footer{border-top:1px solid var(--line-2);padding:44px 0;margin-top:20px}
 }
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.reveal{opacity:1;transform:none;transition:none}}
 
-
-/* hero 末句：渐变艺术字 + 浅色动态光晕（Day/Night 皆可见）*/
+/* hero last line: gradient art type + soft animated glow (visible in Day/Night) */
 .hero .head .hero-last{
   display:block; margin-top:.12em; font-weight:800; letter-spacing:.012em;
   --g1:#2E5A49; --g2:#4E8E6E; --g3:#C9A24B;
@@ -220,14 +220,15 @@ footer{border-top:1px solid var(--line-2);padding:44px 0;margin-top:20px}
   <div class="wrap nav-in">
     <a class="brand" href="#top">Personal OS<span class="dot">.</span></a>
     <nav class="nav-links">
-      <a href="#why">为什么</a>
-      <a href="#features">功能</a>
-      <a href="#sovereignty">数据主权</a>
-      <a href="#pricing">价格</a>
-      <a href="#faq">FAQ</a>
+      <a href="#why" data-i18n="nav.why">Why</a>
+      <a href="#features" data-i18n="nav.features">Features</a>
+      <a href="#sovereignty" data-i18n="nav.sov">Your data</a>
+      <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
     </nav>
     <div class="nav-right">
-      <button class="icon-btn" id="themeBtn" aria-label="切换主题">◐</button>
+      <button class="icon-btn" id="langBtn" aria-label="Switch language">中</button>
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">◐</button>
     </div>
   </div>
 </header>
@@ -238,49 +239,49 @@ footer{border-top:1px solid var(--line-2);padding:44px 0;margin-top:20px}
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <span class="h-badge">● 本地优先 · 数据主权 · 会复利</span>
-      <h1 class="head">不是又一个打卡 App。<br>是你一生的<br><span class="hero-last">成长操作系统。</span></h1>
-      <p class="sub">从人生终点倒推北极星，用决策校准练判断，把嫉妒 / 愤怒 / 心流变成使命的线索，每周把洞察收敛成行动。每转一圈闭环，系统对你的模型就更准一点——这是会复利的成长。</p>
+      <span class="h-badge" data-i18n="hero.badge">● Local-first · Data sovereignty · Compounding</span>
+      <h1 class="head" data-i18n="hero.h1">Not another habit tracker.<br>It's your lifelong<br><span class="hero-last">Growth Operating System.</span></h1>
+      <p class="sub" data-i18n="hero.sub">Reverse-engineer your North Star from the end of your life. Sharpen judgment through decision calibration. Turn envy, anger and flow into clues to your mission. Every week, converge insight into action. Each loop you close, the system's model of you gets a little sharper—growth that compounds.</p>
       <div class="cta">
-        <a class="btn btn-primary" href="#download">下载 · 免费开始 →</a>
-        <a class="btn btn-ghost" href="#why">看它怎么运作</a>
-        <small>本地运行 · 数据永不上云 · 自带模型密钥（GPT / Claude / DeepSeek / Kimi / GLM）</small>
+        <a class="btn btn-primary" href="#download" data-i18n="hero.cta1">Download · Start free →</a>
+        <a class="btn btn-ghost" href="#why" data-i18n="hero.cta2">See how it works</a>
+        <small data-i18n="hero.ctaSmall">Runs locally · Never synced to the cloud · Bring your own model key (GPT / Claude / DeepSeek / Kimi / GLM)</small>
       </div>
     </div>
     <div class="mock reveal" aria-hidden="true">
       <div class="bar"><i></i><i></i><i></i></div>
-      <div class="lbl">北极星 · 你想被记住的样子</div>
-      <div class="aim"><span>把复杂的问题，讲成别人能行动的答案。</span><span>在场时，让人更有底气。</span></div>
+      <div class="lbl" data-i18n="mock.lbl">North Star · How you want to be remembered</div>
+      <div class="aim" data-i18n="mock.aim"><span>Turn complex problems into answers people can act on.</span><span>When present, make others more sure-footed.</span></div>
       <div class="ns">
         <div class="big">7</div>
-        <div class="cap">本周因系统而<br>多做成的真实的事</div>
+        <div class="cap" data-i18n="mock.cap">real things done this week<br>because of the system</div>
       </div>
-      <div class="row"><span class="d"></span> 决策校准 · Brier 0.18 ↓ 判断在变准</div>
-      <div class="chip"><b>→ AI 提炼：</b>你最近三次"嫉妒"都指向同一件事——公开表达。这可能是使命信号。</div>
+      <div class="row" data-i18n="mock.row"><span class="d"></span> Decision calibration · Brier 0.18 ↓ judgment sharpening</div>
+      <div class="chip" data-i18n="mock.chip"><b>→ AI insight:</b> Your last three moments of “envy” all point to the same thing—speaking publicly. That may be a mission signal.</div>
     </div>
   </div>
 </section>
 
 <div class="trust"><div class="wrap trust-in">
-  <span><b>本地</b> SQLite，不上云</span>
-  <span><b>一键</b>导出 / 整库迁移</span>
-  <span><b>自带</b>模型密钥，成本你控</span>
-  <span><b>像 Obsidian</b> 一样，数据是你的一个文件</span>
+  <span data-i18n="trust.1"><b>Local</b> SQLite, no cloud</span>
+  <span data-i18n="trust.2"><b>One-click</b> export / full migration</span>
+  <span data-i18n="trust.3"><b>Bring</b> your own model key, you control cost</span>
+  <span data-i18n="trust.4"><b>Like Obsidian</b>—your data is a single file of yours</span>
 </div></div>
 
 <!-- WHY -->
 <section class="blk" id="why">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">为什么是它</span>
-      <h2 style="margin-top:14px;white-space:nowrap;font-size:clamp(15px,4.2vw,38px)">打卡 App 让你记录，却从不让你成长。</h2>
-      <p>目标每年重设，判断力却从不复利；你收藏了上百条方法论，人生模型依旧模糊。Personal OS 把「记录 → 洞察 → 行动 → 验证」做成一个真实闭环——不是又一个待办清单，而是一台帮你把自己想清楚、并验证有没有想对的机器。</p>
+      <span class="eyebrow" data-i18n="why.eyebrow">Why</span>
+      <h2 style="margin-top:14px" data-i18n="why.h2">Habit trackers let you log. They never let you grow.</h2>
+      <p data-i18n="why.p">Goals reset every year, but judgment never compounds; you've saved a hundred frameworks, yet your model of your own life stays blurry. Personal OS makes “capture → insight → act → verify” a real closed loop—not another to-do list, but a machine that helps you think yourself clear, and check whether you thought right.</p>
     </div>
     <div class="loop">
-      <div class="step reveal"><div class="n">01</div><h3>记录</h3><p>讣告、决策、情绪信号、每周复盘——低摩擦捕获真实输入。</p></div>
-      <div class="step reveal"><div class="n">02</div><h3>洞察</h3><p>AI 唱反调、提炼线索，把噪音聚成使命假设与判断偏差。</p></div>
-      <div class="step reveal"><div class="n">03</div><h3>行动</h3><p>每周收敛成 ≤3 个下一步，只留会推动北极星的那几件。</p></div>
-      <div class="step reveal"><div class="n">04</div><h3>验证</h3><p>决策到期对账、技能要证据背书——用事实校准，而非自我感觉。</p></div>
+      <div class="step reveal"><div class="n">01</div><h3 data-i18n="loop.1.h">Capture</h3><p data-i18n="loop.1.p">Eulogy, decisions, emotional signals, weekly reviews—capture real inputs with low friction.</p></div>
+      <div class="step reveal"><div class="n">02</div><h3 data-i18n="loop.2.h">Insight</h3><p data-i18n="loop.2.p">AI pushes back and distills clues, turning noise into mission hypotheses and judgment biases.</p></div>
+      <div class="step reveal"><div class="n">03</div><h3 data-i18n="loop.3.h">Act</h3><p data-i18n="loop.3.p">Each week converges to ≤3 next steps—only the ones that move your North Star.</p></div>
+      <div class="step reveal"><div class="n">04</div><h3 data-i18n="loop.4.h">Verify</h3><p data-i18n="loop.4.p">Decisions reconcile on their due date; skills need evidence—calibrated by facts, not gut feel.</p></div>
     </div>
   </div>
 </section>
@@ -289,17 +290,17 @@ footer{border-top:1px solid var(--line-2);padding:44px 0;margin-top:20px}
 <section class="blk" id="features" style="background:var(--bg2)">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">与众不同之处</span>
-      <h2 style="margin-top:14px;white-space:nowrap;font-size:clamp(15px,4.2vw,38px)">六个别处没有、且会随时间增值的机制。</h2>
-      <p>每一个都为「今天就有用、并且长期复利」而设计——难以被复制，因为它长在你自己的数据和历史上。</p>
+      <span class="eyebrow" data-i18n="feat.eyebrow">What makes it different</span>
+      <h2 style="margin-top:14px" data-i18n="feat.h2">Six mechanisms you won't find elsewhere—that appreciate over time.</h2>
+      <p data-i18n="feat.p">Each is built to pay off today and compound long-term—and hard to copy, because it grows on your own data and history.</p>
     </div>
     <div class="feat">
-      <div class="card reveal"><div class="k">01</div><h3>讣告北极星</h3><p>不设 KPI，而是从人生终点倒推方向。AI 陪你把「想被如何记住」想清楚，成为整个系统的定盘星。</p></div>
-      <div class="card reveal"><div class="k">02</div><h3>决策校准</h3><p>每个决策押上置信度，到期强制对账。Brier 分让你第一次看见自己判断力的真实曲线——并逐周变准。</p></div>
-      <div class="card reveal"><div class="k">03</div><h3>使命信号雷达</h3><p>嫉妒、愤怒、心流不是情绪，是使命的线索。AI 把散落的信号聚成可检验的使命假设。</p></div>
-      <div class="card reveal"><div class="k">04</div><h3>能力账本 · 折旧</h3><p>技能会「贬值」。等级必须有证据背书，否则封顶 L1——防自嗨，只认真实产出。</p></div>
-      <div class="card reveal"><div class="k">05</div><h3>对抗式每周复盘</h3><p>AI 主动唱反调，逼你面对没做的和自欺的，收敛出下周 ≤3 个行动与本周 North Star。</p></div>
-      <div class="card reveal"><div class="k">06</div><h3>反目标 & 低潮协议</h3><p>负面空间当机会过滤器；趁状态好时写好低谷预案。护栏，而非鸡汤。</p></div>
+      <div class="card reveal"><div class="k">01</div><h3 data-i18n="c1.h">Eulogy North Star</h3><p data-i18n="c1.p">No KPIs—reverse-engineer direction from the end of your life. AI helps you clarify how you want to be remembered, the anchor for the whole system.</p></div>
+      <div class="card reveal"><div class="k">02</div><h3 data-i18n="c2.h">Decision Calibration</h3><p data-i18n="c2.p">Stake a confidence level on every decision; reconcile when due. A Brier score shows the real curve of your judgment for the first time—and sharpens it week by week.</p></div>
+      <div class="card reveal"><div class="k">03</div><h3 data-i18n="c3.h">Mission-Signal Radar</h3><p data-i18n="c3.p">Envy, anger and flow aren't just emotions—they're clues to your mission. AI clusters scattered signals into testable mission hypotheses.</p></div>
+      <div class="card reveal"><div class="k">04</div><h3 data-i18n="c4.h">Capability Ledger · Depreciation</h3><p data-i18n="c4.p">Skills “depreciate.” Levels must be backed by evidence or they cap at L1—no self-flattery, only real output.</p></div>
+      <div class="card reveal"><div class="k">05</div><h3 data-i18n="c5.h">Adversarial Weekly Review</h3><p data-i18n="c5.p">AI actively plays devil's advocate, forcing you to face what you dodged and where you fooled yourself—converging into ≤3 actions and this week's North Star.</p></div>
+      <div class="card reveal"><div class="k">06</div><h3 data-i18n="c6.h">Anti-Goals & Low-Point Protocol</h3><p data-i18n="c6.p">Negative space as an opportunity filter; write your low-point plan while you're strong. Guardrails, not pep talk.</p></div>
     </div>
   </div>
 </section>
@@ -308,24 +309,24 @@ footer{border-top:1px solid var(--line-2);padding:44px 0;margin-top:20px}
 <section class="blk" id="sovereignty">
   <div class="wrap split">
     <div class="reveal">
-      <span class="eyebrow">数据主权</span>
-      <h2 style="margin-top:14px;font-size:clamp(26px,3.6vw,38px)">你的一生，不该躺在别人的服务器上。</h2>
+      <span class="eyebrow" data-i18n="sov.eyebrow">Data sovereignty</span>
+      <h2 style="margin-top:14px;font-size:clamp(26px,3.6vw,38px)" data-i18n="sov.h2">Your life shouldn't live on someone else's server.</h2>
       <div class="sov-list">
-        <div class="li"><span class="t">✓</span><div><h4>本地存储，永不上云</h4><p>全部数据是本地一个 SQLite 文件，只在你的机器上。</p></div></div>
-        <div class="li"><span class="t">✓</span><div><h4>自带模型密钥</h4><p>填你自己的 API Key，隐私你留、成本你控；密钥只写本地。</p></div></div>
-        <div class="li"><span class="t">✓</span><div><h4>一键导出 · 整库迁移</h4><p>导出 JSON，或整库复制一个文件搬到新机器——像 Obsidian 搬 vault。</p></div></div>
-        <div class="li"><span class="t">✓</span><div><h4>无锁定</h4><p>数据格式开放、可随时带走。停止付费，数据依然是你的。</p></div></div>
+        <div class="li"><span class="t">✓</span><div><h4 data-i18n="sov.1.h">Local storage, never in the cloud</h4><p data-i18n="sov.1.p">All your data is one local SQLite file, only on your machine.</p></div></div>
+        <div class="li"><span class="t">✓</span><div><h4 data-i18n="sov.2.h">Bring your own model key</h4><p data-i18n="sov.2.p">Add your own API key—privacy stays yours, cost stays yours; the key is written only locally.</p></div></div>
+        <div class="li"><span class="t">✓</span><div><h4 data-i18n="sov.3.h">One-click export · full migration</h4><p data-i18n="sov.3.p">Export JSON, or copy the whole database as one file to a new machine—like moving an Obsidian vault.</p></div></div>
+        <div class="li"><span class="t">✓</span><div><h4 data-i18n="sov.4.h">No lock-in</h4><p data-i18n="sov.4.p">Open format, take it anytime. Stop paying and the data is still yours.</p></div></div>
       </div>
     </div>
     <div class="file reveal">
       <div class="path">~/PersonalOS/data/personal-os.db</div>
       <div class="grid">
-        <div class="cell"><div class="c-l">决策已对账</div><div class="c-v tnum">42</div></div>
-        <div class="cell"><div class="c-l">Brier 分</div><div class="c-v tnum">0.18</div></div>
-        <div class="cell"><div class="c-l">使命信号</div><div class="c-v tnum">130</div></div>
-        <div class="cell"><div class="c-l">连续复盘</div><div class="c-v tnum">36<span style="font-size:13px"> 周</span></div></div>
+        <div class="cell"><div class="c-l" data-i18n="file.1">Decisions reconciled</div><div class="c-v tnum">42</div></div>
+        <div class="cell"><div class="c-l" data-i18n="file.2">Brier score</div><div class="c-v tnum">0.18</div></div>
+        <div class="cell"><div class="c-l" data-i18n="file.3">Mission signals</div><div class="c-v tnum">130</div></div>
+        <div class="cell"><div class="c-l" data-i18n="file.4">Weekly-review streak</div><div class="c-v tnum">36<span style="font-size:13px" data-i18n="file.wk"> wks</span></div></div>
       </div>
-      <p style="font-family:var(--sans);font-size:12.5px;color:var(--muted);margin-top:16px;line-height:1.6">整个「仓库」就是这一个文件。备份、迁移、加密，全在你手里。</p>
+      <p style="font-family:var(--sans);font-size:12.5px;color:var(--muted);margin-top:16px;line-height:1.6" data-i18n="file.note">The entire “vault” is this one file. Backup, migration, encryption—all in your hands.</p>
     </div>
   </div>
 </section>
@@ -334,16 +335,16 @@ footer{border-top:1px solid var(--line-2);padding:44px 0;margin-top:20px}
 <section class="blk" id="models" style="background:var(--bg2)">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">自带模型</span>
-      <h2 style="margin-top:14px">用你信任的模型，填你自己的 Key。</h2>
-      <p>界面里一键切换，无需改配置文件。国内外主流模型全支持，按需选性价比或长上下文。</p>
+      <span class="eyebrow" data-i18n="mdl.eyebrow">Bring your own model</span>
+      <h2 style="margin-top:14px" data-i18n="mdl.h2">Use the model you trust. Plug in your own key.</h2>
+      <p data-i18n="mdl.p">Switch in one click in the UI—no config files. Major models worldwide are supported; pick for value or long context as you need.</p>
     </div>
     <div class="models reveal">
       <div class="m"><span class="dot"></span>OpenAI · GPT</div>
       <div class="m"><span class="dot"></span>Claude · Anthropic</div>
-      <div class="m"><span class="dot"></span>DeepSeek <span>性价比</span></div>
-      <div class="m"><span class="dot"></span>Kimi · Moonshot <span>长上下文</span></div>
-      <div class="m"><span class="dot"></span>GLM · 智谱 <span>免费额度</span></div>
+      <div class="m"><span class="dot"></span>DeepSeek <span data-i18n="mdl.value">value</span></div>
+      <div class="m"><span class="dot"></span>Kimi · Moonshot <span data-i18n="mdl.long">long context</span></div>
+      <div class="m"><span class="dot"></span>GLM · Zhipu <span data-i18n="mdl.free">free tier</span></div>
     </div>
   </div>
 </section>
@@ -352,18 +353,18 @@ footer{border-top:1px solid var(--line-2);padding:44px 0;margin-top:20px}
 <section class="blk" id="download">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">五分钟上手</span>
-      <h2 style="margin-top:14px">下载，然后写下你的第一份讣告。</h2>
+      <span class="eyebrow" data-i18n="dl.eyebrow">Up and running in 5 minutes</span>
+      <h2 style="margin-top:14px" data-i18n="dl.h2">Download, then write your first eulogy.</h2>
     </div>
     <div class="qs reveal">
-      <div class="q"><h4>下载并安装</h4><p>macOS / Windows 本地应用，或自行部署源码。</p></div>
-      <div class="q"><h4>一键初始化</h4><p>运行 <code>npm run setup</code>，自动建库、就绪。</p></div>
-      <div class="q"><h4>选模型填 Key</h4><p>设置里选服务商，粘贴你自己的 API Key。</p></div>
-      <div class="q"><h4>写讣告</h4><p>约 15 分钟，点亮你的北极星，系统开始转动。</p></div>
+      <div class="q"><h4 data-i18n="qs.1.h">Download & install</h4><p data-i18n="qs.1.p">Native app for macOS / Windows—grab it above.</p></div>
+      <div class="q"><h4 data-i18n="qs.2.h">Create your account</h4><p data-i18n="qs.2.p">Open the app and set up your own local account—data starts blank.</p></div>
+      <div class="q"><h4 data-i18n="qs.3.h">Pick a model, add your key</h4><p data-i18n="qs.3.p">Settings → AI: choose a provider, paste your own API key.</p></div>
+      <div class="q"><h4 data-i18n="qs.4.h">Write your eulogy</h4><p data-i18n="qs.4.p">~15 minutes to light up your North Star and set the system in motion.</p></div>
     </div>
     <div class="cta reveal" style="margin-top:34px">
-      <a id="dl-win" class="btn btn-primary" href="download/Personal-OS-Setup.exe" download>下载 Windows</a>
-      <a id="dl-mac" class="btn btn-ghost" href="download/Personal-OS.dmg" download>下载 macOS</a>
+      <a id="dl-win" class="btn btn-primary" href="download/Personal-OS-Setup.exe" download data-i18n="dl.win">Download for Windows</a>
+      <a id="dl-mac" class="btn btn-ghost" href="download/Personal-OS.dmg" download data-i18n="dl.mac">Download for macOS</a>
     </div>
   </div>
 </section>
@@ -372,57 +373,57 @@ footer{border-top:1px solid var(--line-2);padding:44px 0;margin-top:20px}
 <section class="blk" id="pricing" style="background:var(--bg2)">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">价格</span>
-      <h2 style="margin-top:14px;white-space:nowrap;font-size:clamp(15px,4.2vw,38px)">一次买断，终身你有。没有订阅，没有云账单。</h2>
-      <p>模型费用直接付给你选的服务商，我们不加价、不碰你的数据。</p>
+      <span class="eyebrow" data-i18n="pr.eyebrow">Pricing</span>
+      <h2 style="margin-top:14px" data-i18n="pr.h2">Buy once, yours for life. No subscription, no cloud bill.</h2>
+      <p data-i18n="pr.p">Model costs go straight to the provider you choose—we add no markup and never touch your data.</p>
     </div>
     <div class="price">
       <div class="plan reveal">
-        <div class="pn">本地版 · 免费</div>
+        <div class="pn" data-i18n="pr.free.n">Local · Free</div>
         <div class="pp">¥0</div>
         <ul>
-          <li>完整核心闭环</li>
-          <li>本地存储 · 数据主权</li>
-          <li>自带模型密钥</li>
-          <li>导出 / 迁移</li>
+          <li data-i18n="pr.free.1">Full core loop</li>
+          <li data-i18n="pr.free.2">Local storage · data sovereignty</li>
+          <li data-i18n="pr.free.3">Bring your own model key</li>
+          <li data-i18n="pr.free.4">Export / migrate</li>
         </ul>
-        <a class="btn btn-ghost" href="#download">开始使用</a>
+        <a class="btn btn-ghost" href="#download" data-i18n="pr.free.cta">Get started</a>
       </div>
       <div class="plan feature reveal">
-        <div class="pn">买断版 · Pro<span class="tag">占位价</span></div>
-        <div class="pp">¥299 <small>/ 一次买断</small></div>
+        <div class="pn" data-i18n="pr.pro.n">Buyout · Pro<span class="tag" data-i18n="pr.pro.tag">placeholder</span></div>
+        <div class="pp" data-i18n="pr.pro.pp">¥299 <small>/ one-time</small></div>
         <ul>
-          <li>全部本地版功能</li>
-          <li>桌面应用 · 一键安装</li>
-          <li>自选数据存储位置</li>
-          <li>后续版本免费升级</li>
+          <li data-i18n="pr.pro.1">Everything in Local</li>
+          <li data-i18n="pr.pro.2">Desktop app · one-click install</li>
+          <li data-i18n="pr.pro.3">Choose your own data location</li>
+          <li data-i18n="pr.pro.4">Free upgrades to future versions</li>
         </ul>
-        <a class="btn btn-primary" href="#download">购买（即将开放）</a>
+        <a class="btn btn-primary" href="#download" data-i18n="pr.pro.cta">Buy (coming soon)</a>
       </div>
     </div>
-    <p style="font-size:12.5px;color:var(--faint);margin-top:18px">价格为占位示意，最终以正式发布为准。</p>
+    <p style="font-size:12.5px;color:var(--faint);margin-top:18px" data-i18n="pr.note">Prices shown are placeholders; final pricing at launch.</p>
   </div>
 </section>
 
 <!-- FAQ -->
 <section class="blk" id="faq">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="eyebrow">常见问题</span><h2 style="margin-top:14px">你可能想问的</h2></div>
+    <div class="sec-head reveal"><span class="eyebrow" data-i18n="faq.eyebrow">FAQ</span><h2 style="margin-top:14px" data-i18n="faq.h2">Questions you might have</h2></div>
     <div class="faq reveal">
-      <details open><summary>我的数据存在哪里？会上传吗？</summary><p>全部存在你本机的一个 SQLite 文件里，永不上云。只有当你使用 AI 功能时，相关文本才会发到你自己配置的模型服务商（且发送前做敏感信息脱敏）。</p></details>
-      <details><summary>需要联网吗？</summary><p>核心记录、复盘、账本全部离线可用。只有 AI 追问 / 提炼 / 对抗式复盘需要联网调用你选的模型。也支持本地 Ollama，完全离线。</p></details>
-      <details><summary>支持哪些 AI 模型？</summary><p>GPT、Claude、DeepSeek、Kimi、GLM 任选，界面内填自己的 Key 即可切换。费用直接付给服务商，我们不加价。</p></details>
-      <details><summary>能跨设备同步吗？</summary><p>不做云同步——这是刻意的设计，为了数据主权。换设备时，导出 JSON 或整库复制那个文件即可，像搬 Obsidian 的 vault 一样无损。</p></details>
-      <details><summary>为什么不是打卡 / 待办 App？</summary><p>打卡让你记录，却不让你成长。Personal OS 的每个机制都为「判断力和方向感的复利」而设计：决策要对账、技能要证据、情绪当信号、每周被 AI 唱反调。</p></details>
+      <details open><summary data-i18n="faq.1.q">Where is my data stored? Is it uploaded?</summary><p data-i18n="faq.1.a">Everything lives in a local SQLite file on your machine, never in the cloud. Only when you use AI features is the relevant text sent to the model provider you configured (with sensitive info redacted before sending).</p></details>
+      <details><summary data-i18n="faq.2.q">Do I need to be online?</summary><p data-i18n="faq.2.a">Core capture, review and ledgers all work offline. Only AI follow-ups / synthesis / adversarial review call the model you chose. Local Ollama is supported for fully offline use.</p></details>
+      <details><summary data-i18n="faq.3.q">Which AI models are supported?</summary><p data-i18n="faq.3.a">GPT, Claude, DeepSeek, Kimi, GLM—switch by pasting your own key in the UI. You pay the provider directly; we add no markup.</p></details>
+      <details><summary data-i18n="faq.4.q">Can I sync across devices?</summary><p data-i18n="faq.4.a">No cloud sync—deliberately, for data sovereignty. To switch devices, export JSON or copy that one database file, losslessly, like moving an Obsidian vault.</p></details>
+      <details><summary data-i18n="faq.5.q">Why not a habit / to-do app?</summary><p data-i18n="faq.5.a">Trackers let you log but not grow. Every mechanism in Personal OS is built to compound judgment and direction: decisions get reconciled, skills need evidence, emotions become signals, and AI plays devil's advocate each week.</p></details>
     </div>
   </div>
 </section>
 
 <!-- CTA BAND -->
 <section class="blk"><div class="wrap"><div class="band reveal">
-  <h2>把人生，活成一个会复利的系统。</h2>
-  <p>今天就开始，让每一次记录都为未来的你积累。</p>
-  <a class="btn btn-primary" href="#download">免费下载 Personal OS →</a>
+  <h2 data-i18n="band.h2">Live your life as a system that compounds.</h2>
+  <p data-i18n="band.p">Start today, so every entry accrues to your future self.</p>
+  <a class="btn btn-primary" href="#download" data-i18n="band.cta">Download Personal OS free →</a>
 </div></div></section>
 
 </main>
@@ -431,41 +432,123 @@ footer{border-top:1px solid var(--line-2);padding:44px 0;margin-top:20px}
   <div class="wrap foot">
     <div>
       <div class="brand" style="font-size:18px">Personal OS<span class="dot">.</span></div>
-      <div class="muted" style="margin-top:6px">会复利的个人成长系统 · 本地优先 · 数据主权</div>
+      <div class="muted" style="margin-top:6px" data-i18n="foot.tag">The compounding personal-growth system · Local-first · Data sovereignty</div>
     </div>
     <div class="links">
-      <a href="#features">功能</a>
-      <a href="#sovereignty">数据主权</a>
-      <a href="#pricing">价格</a>
-      <a href="#faq">FAQ</a>
+      <a href="#features" data-i18n="nav.features">Features</a>
+      <a href="#sovereignty" data-i18n="nav.sov">Your data</a>
+      <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
     </div>
   </div>
-  <div class="wrap" style="margin-top:24px"><div class="muted" style="font-size:12px">© 2026 Personal OS · 一人公司出品 · pos.com</div></div>
+  <div class="wrap" style="margin-top:24px"><div class="muted" style="font-size:12px" data-i18n="foot.copy">© 2026 Personal OS · Built by a one-person company · pos.com</div></div>
 </footer>
 
 <script>
 (function(){
-  var root=document.documentElement, KEY='pos-site-theme';
-  try{var s=localStorage.getItem(KEY); if(s){root.setAttribute('data-theme',s);} else if(matchMedia('(prefers-color-scheme:dark)').matches){root.setAttribute('data-theme','dark');}}catch(e){}
+  var root=document.documentElement;
+
+  /* theme */
+  var TKEY='pos-site-theme';
+  try{var s=localStorage.getItem(TKEY); if(s){root.setAttribute('data-theme',s);} else if(matchMedia('(prefers-color-scheme:dark)').matches){root.setAttribute('data-theme','dark');}}catch(e){}
   document.getElementById('themeBtn').addEventListener('click',function(){
     var d=root.getAttribute('data-theme')==='dark'?'':'dark';
     root.setAttribute('data-theme',d);
-    try{localStorage.setItem(KEY,d||'light');}catch(e){}
+    try{localStorage.setItem(TKEY,d||'light');}catch(e){}
   });
+
+  /* i18n — English is the default (baseline in HTML); Chinese from this dict */
+  var ZH={
+    'nav.why':'为什么','nav.features':'功能','nav.sov':'数据主权','nav.pricing':'价格','nav.faq':'常见问题',
+    'hero.badge':'● 本地优先 · 数据主权 · 会复利',
+    'hero.h1':'不是又一个打卡 App。<br>是你一生的<br><span class="hero-last">成长操作系统。</span>',
+    'hero.sub':'从人生终点倒推北极星，用决策校准练判断，把嫉妒 / 愤怒 / 心流变成使命的线索，每周把洞察收敛成行动。每转一圈闭环，系统对你的模型就更准一点——这是会复利的成长。',
+    'hero.cta1':'下载 · 免费开始 →','hero.cta2':'看它怎么运作',
+    'hero.ctaSmall':'本地运行 · 数据永不上云 · 自带模型密钥（GPT / Claude / DeepSeek / Kimi / GLM）',
+    'mock.lbl':'北极星 · 你想被记住的样子',
+    'mock.aim':'<span>把复杂的问题，讲成别人能行动的答案。</span><span>在场时，让人更有底气。</span>',
+    'mock.cap':'本周因系统而<br>多做成的真实的事',
+    'mock.row':'<span class="d"></span> 决策校准 · Brier 0.18 ↓ 判断在变准',
+    'mock.chip':'<b>→ AI 提炼：</b>你最近三次“嫉妒”都指向同一件事——公开表达。这可能是使命信号。',
+    'trust.1':'<b>本地</b> SQLite，不上云','trust.2':'<b>一键</b>导出 / 整库迁移','trust.3':'<b>自带</b>模型密钥，成本你控','trust.4':'<b>像 Obsidian</b> 一样，数据是你的一个文件',
+    'why.eyebrow':'为什么是它','why.h2':'打卡 App 让你记录，却从不让你成长。',
+    'why.p':'目标每年重设，判断力却从不复利；你收藏了上百条方法论，人生模型依旧模糊。Personal OS 把「记录 → 洞察 → 行动 → 验证」做成一个真实闭环——不是又一个待办清单，而是一台帮你把自己想清楚、并验证有没有想对的机器。',
+    'loop.1.h':'记录','loop.1.p':'讣告、决策、情绪信号、每周复盘——低摩擦捕获真实输入。',
+    'loop.2.h':'洞察','loop.2.p':'AI 唱反调、提炼线索，把噪音聚成使命假设与判断偏差。',
+    'loop.3.h':'行动','loop.3.p':'每周收敛成 ≤3 个下一步，只留会推动北极星的那几件。',
+    'loop.4.h':'验证','loop.4.p':'决策到期对账、技能要证据背书——用事实校准，而非自我感觉。',
+    'feat.eyebrow':'与众不同之处','feat.h2':'六个别处没有、且会随时间增值的机制。',
+    'feat.p':'每一个都为「今天就有用、并且长期复利」而设计——难以被复制，因为它长在你自己的数据和历史上。',
+    'c1.h':'讣告北极星','c1.p':'不设 KPI，而是从人生终点倒推方向。AI 陪你把「想被如何记住」想清楚，成为整个系统的定盘星。',
+    'c2.h':'决策校准','c2.p':'每个决策押上置信度，到期强制对账。Brier 分让你第一次看见自己判断力的真实曲线——并逐周变准。',
+    'c3.h':'使命信号雷达','c3.p':'嫉妒、愤怒、心流不是情绪，是使命的线索。AI 把散落的信号聚成可检验的使命假设。',
+    'c4.h':'能力账本 · 折旧','c4.p':'技能会「贬值」。等级必须有证据背书，否则封顶 L1——防自嗨，只认真实产出。',
+    'c5.h':'对抗式每周复盘','c5.p':'AI 主动唱反调，逼你面对没做的和自欺的，收敛出下周 ≤3 个行动与本周 North Star。',
+    'c6.h':'反目标 & 低潮协议','c6.p':'负面空间当机会过滤器；趁状态好时写好低谷预案。护栏，而非鸡汤。',
+    'sov.eyebrow':'数据主权','sov.h2':'你的一生，不该躺在别人的服务器上。',
+    'sov.1.h':'本地存储，永不上云','sov.1.p':'全部数据是本地一个 SQLite 文件，只在你的机器上。',
+    'sov.2.h':'自带模型密钥','sov.2.p':'填你自己的 API Key，隐私你留、成本你控；密钥只写本地。',
+    'sov.3.h':'一键导出 · 整库迁移','sov.3.p':'导出 JSON，或整库复制一个文件搬到新机器——像 Obsidian 搬 vault。',
+    'sov.4.h':'无锁定','sov.4.p':'数据格式开放、可随时带走。停止付费，数据依然是你的。',
+    'file.1':'决策已对账','file.2':'Brier 分','file.3':'使命信号','file.4':'连续复盘','file.wk':' 周',
+    'file.note':'整个「仓库」就是这一个文件。备份、迁移、加密，全在你手里。',
+    'mdl.eyebrow':'自带模型','mdl.h2':'用你信任的模型，填你自己的 Key。',
+    'mdl.p':'界面里一键切换，无需改配置文件。国内外主流模型全支持，按需选性价比或长上下文。',
+    'mdl.value':'性价比','mdl.long':'长上下文','mdl.free':'免费额度',
+    'dl.eyebrow':'五分钟上手','dl.h2':'下载，然后写下你的第一份讣告。',
+    'qs.1.h':'下载并安装','qs.1.p':'macOS / Windows 本地应用——上方直接下载。',
+    'qs.2.h':'创建账户','qs.2.p':'打开应用创建你自己的本地账户，数据从空白开始。',
+    'qs.3.h':'选模型填 Key','qs.3.p':'设置 → AI 配置：选服务商，粘贴你自己的 API Key。',
+    'qs.4.h':'写讣告','qs.4.p':'约 15 分钟，点亮你的北极星，系统开始转动。',
+    'dl.win':'下载 Windows','dl.mac':'下载 macOS',
+    'pr.eyebrow':'价格','pr.h2':'一次买断，终身你有。没有订阅，没有云账单。',
+    'pr.p':'模型费用直接付给你选的服务商，我们不加价、不碰你的数据。',
+    'pr.free.n':'本地版 · 免费','pr.free.1':'完整核心闭环','pr.free.2':'本地存储 · 数据主权','pr.free.3':'自带模型密钥','pr.free.4':'导出 / 迁移','pr.free.cta':'开始使用',
+    'pr.pro.n':'买断版 · Pro<span class="tag">占位价</span>','pr.pro.tag':'占位价','pr.pro.pp':'¥299 <small>/ 一次买断</small>',
+    'pr.pro.1':'全部本地版功能','pr.pro.2':'桌面应用 · 一键安装','pr.pro.3':'自选数据存储位置','pr.pro.4':'后续版本免费升级','pr.pro.cta':'购买（即将开放）',
+    'pr.note':'价格为占位示意，最终以正式发布为准。',
+    'faq.eyebrow':'常见问题','faq.h2':'你可能想问的',
+    'faq.1.q':'我的数据存在哪里？会上传吗？','faq.1.a':'全部存在你本机的一个 SQLite 文件里，永不上云。只有当你使用 AI 功能时，相关文本才会发到你自己配置的模型服务商（且发送前做敏感信息脱敏）。',
+    'faq.2.q':'需要联网吗？','faq.2.a':'核心记录、复盘、账本全部离线可用。只有 AI 追问 / 提炼 / 对抗式复盘需要联网调用你选的模型。也支持本地 Ollama，完全离线。',
+    'faq.3.q':'支持哪些 AI 模型？','faq.3.a':'GPT、Claude、DeepSeek、Kimi、GLM 任选，界面内填自己的 Key 即可切换。费用直接付给服务商，我们不加价。',
+    'faq.4.q':'能跨设备同步吗？','faq.4.a':'不做云同步——这是刻意的设计，为了数据主权。换设备时，导出 JSON 或整库复制那个文件即可，像搬 Obsidian 的 vault 一样无损。',
+    'faq.5.q':'为什么不是打卡 / 待办 App？','faq.5.a':'打卡让你记录，却不让你成长。Personal OS 的每个机制都为「判断力和方向感的复利」而设计：决策要对账、技能要证据、情绪当信号、每周被 AI 唱反调。',
+    'band.h2':'把人生，活成一个会复利的系统。','band.p':'今天就开始，让每一次记录都为未来的你积累。','band.cta':'免费下载 Personal OS →',
+    'foot.tag':'会复利的个人成长系统 · 本地优先 · 数据主权',
+    'foot.copy':'© 2026 Personal OS · 一人公司出品 · pos.com'
+  };
+  var TITLE={en:'Personal OS — the compounding personal-growth system',zh:'Personal OS —— 会复利的个人成长系统'};
+  var nodes=[].slice.call(document.querySelectorAll('[data-i18n]'));
+  var EN={}; nodes.forEach(function(el){EN[el.getAttribute('data-i18n')]=el.innerHTML;});
+  function apply(lang){
+    nodes.forEach(function(el){
+      var k=el.getAttribute('data-i18n');
+      var v=lang==='zh'?ZH[k]:EN[k];
+      if(v!=null) el.innerHTML=v;
+    });
+    root.setAttribute('lang',lang);
+    document.title=TITLE[lang]||TITLE.en;
+    var b=document.getElementById('langBtn'); if(b) b.textContent=lang==='zh'?'EN':'中';
+  }
+  var LKEY='pos-site-lang', cur='en';
+  try{var sv=localStorage.getItem(LKEY); if(sv==='zh'||sv==='en') cur=sv;}catch(e){}
+  apply(cur);
+  document.getElementById('langBtn').addEventListener('click',function(){
+    cur=cur==='zh'?'en':'zh'; apply(cur);
+    try{localStorage.setItem(LKEY,cur);}catch(e){}
+  });
+
+  /* reveal on scroll */
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
 
-  // Download target: use GitHub Releases when the site is live; keep the local file when testing on file:// or localhost.
+  /* download: GitHub Releases when live; local file when testing on file:// or localhost */
   var GH_USER='AQ-zero', GH_REPO='personal-os';
   var base='https://github.com/'+GH_USER+'/'+GH_REPO+'/releases/latest/download/';
   var isLocal=location.protocol==='file:'||/^(localhost|127\.0\.0\.1)$/.test(location.hostname);
-  var live=!isLocal && GH_USER!=='__GH_USER__';
-  var winBtn=document.getElementById('dl-win');
-  var macBtn=document.getElementById('dl-mac');
-  if(live){
-    if(winBtn) winBtn.href=base+'Personal-OS-Setup.exe';
-    if(macBtn) macBtn.href=base+'Personal-OS.dmg';
-  }
+  var liveDl=!isLocal && GH_USER!=='__GH_USER__';
+  var winBtn=document.getElementById('dl-win'); var macBtn=document.getElementById('dl-mac');
+  if(liveDl){ if(winBtn) winBtn.href=base+'Personal-OS-Setup.exe'; if(macBtn) macBtn.href=base+'Personal-OS.dmg'; }
 })();
 </script>
 </body>

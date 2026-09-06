@@ -1,8 +1,10 @@
 <div align="center">
 
-<img src="./banner.svg" alt="Personal OS — 成长操作系统" width="100%">
+<img src="./hero.svg" alt="Personal OS — the Growth Operating System" width="100%">
 
-<h3>不是又一个打卡 App。是你一生的成长操作系统。</h3>
+<h3>Not another habit tracker. It's your lifelong Growth Operating System.</h3>
+
+<p><b>English</b> &nbsp;·&nbsp; <a href="./README.zh.md">中文</a></p>
 
 <p>
   <img src="https://img.shields.io/github/v/release/AQ-zero/personal-os?color=2E5A49&label=release" alt="release">
@@ -12,111 +14,111 @@
 </p>
 
 <p>
-  <a href="https://github.com/AQ-zero/personal-os/releases/latest/download/Personal-OS-Setup.exe"><img src="https://img.shields.io/badge/⬇%20下载-Windows-2E5A49?style=for-the-badge" alt="下载 Windows"></a>
+  <a href="https://github.com/AQ-zero/personal-os/releases/latest/download/Personal-OS-Setup.exe"><img src="https://img.shields.io/badge/⬇%20Download-Windows-2E5A49?style=for-the-badge" alt="Download for Windows"></a>
   &nbsp;
-  <a href="https://github.com/AQ-zero/personal-os/releases/latest/download/Personal-OS.dmg"><img src="https://img.shields.io/badge/⬇%20下载-macOS-3A4A3F?style=for-the-badge" alt="下载 macOS"></a>
+  <a href="https://github.com/AQ-zero/personal-os/releases/latest/download/Personal-OS.dmg"><img src="https://img.shields.io/badge/⬇%20Download-macOS-3A4A3F?style=for-the-badge" alt="Download for macOS"></a>
   &nbsp;
-  <a href="https://aq-zero.github.io/personal-os"><img src="https://img.shields.io/badge/🌐%20官网-访问-8A9A5B?style=for-the-badge" alt="官网"></a>
+  <a href="https://aq-zero.github.io/personal-os"><img src="https://img.shields.io/badge/🌐%20Website-visit-8A9A5B?style=for-the-badge" alt="Website"></a>
 </p>
 
 </div>
 
 ---
 
-> **打卡 App 让你记录，却从不让你成长。**
-> Personal OS 用六个别处没有、且会随时间复利的机制，帮你找到人生的北极星，并真正朝它前进。
-> **一次买断，终身你有。没有订阅，没有云账单。**
+> **Habit trackers let you log. They never let you grow.**
+> Personal OS uses six mechanisms you won't find elsewhere—each compounding over time—to help you find your North Star and actually move toward it.
+> **Buy once, yours for life. No subscription, no cloud bill.**
 
-## 为什么不是又一个打卡 App
+## Why not just another habit tracker
 
-打卡 App 擅长记录「你做了什么」，却从不回答那个更重要的问题——**这些事，把你带向哪里？**
+Habit trackers are great at recording *what you did*—but never answer the more important question: **where is it all taking you?**
 
-Personal OS 不追踪连续打卡天数，而是：
+Personal OS doesn't count streaks. Instead it:
 
-- 先帮你想清楚**想被如何记住**，把它变成整个系统的北极星；
-- 把每一个决策、每一次情绪波动、每一份复盘，都变成**会校准、会增值**的输入；
-- 用 AI 主动唱反调，逼你面对自欺与逃避，而不是给你点赞。
+- helps you first get clear on **how you want to be remembered**, and turns that into the North Star for the whole system;
+- makes every decision, every emotional spike, every review a **self-calibrating, compounding** input;
+- has AI actively play devil's advocate—forcing you to face self-deception and avoidance, instead of handing out applause.
 
-> 它的每个机制都遵循一条硬规则：**当天就有用，并且会随时间复利。**
+> Every mechanism follows one hard rule: **useful today, and compounding over time.**
 
-## ✦ 六大机制 · 别处没有，且会随时间增值
+## ✦ Six mechanisms — found nowhere else, appreciating over time
 
-|  | 机制 | 它做什么 |
+|  | Mechanism | What it does |
 |:--:|---|---|
-| **01** | **讣告北极星** | 不设 KPI，而是从人生终点倒推方向。AI 陪你把「想被如何记住」想清楚，成为整个系统的定盘星。 |
-| **02** | **决策校准** | 每个决策押上置信度，到期强制对账。Brier 分让你第一次看见自己判断力的真实曲线——并逐周变准。 |
-| **03** | **使命信号雷达** | 嫉妒、愤怒、心流不是情绪，是使命的线索。AI 把散落的信号聚成可检验的使命假设。 |
-| **04** | **能力账本 · 折旧** | 技能会「贬值」。等级必须有证据背书，否则封顶 L1——防自嗨，只认真实产出。 |
-| **05** | **对抗式每周复盘** | AI 主动唱反调，逼你面对没做的和自欺的，收敛出下周 ≤3 个行动与本周 North Star。 |
-| **06** | **反目标 & 低潮协议** | 负面空间当机会过滤器；趁状态好时写好低谷预案。护栏，而非鸡汤。 |
+| **01** | **Eulogy North Star** | No KPIs—reverse-engineer direction from the end of your life. AI helps you clarify how you want to be remembered, the anchor for the whole system. |
+| **02** | **Decision Calibration** | Stake a confidence level on every decision; reconcile when due. A Brier score shows the real curve of your judgment for the first time—and sharpens it week by week. |
+| **03** | **Mission-Signal Radar** | Envy, anger and flow aren't just emotions—they're clues to your mission. AI clusters scattered signals into testable mission hypotheses. |
+| **04** | **Capability Ledger · Depreciation** | Skills "depreciate." Levels must be backed by evidence or they cap at L1—no self-flattery, only real output. |
+| **05** | **Adversarial Weekly Review** | AI plays devil's advocate, forcing you to face what you dodged and where you fooled yourself—converging into ≤3 actions and this week's North Star. |
+| **06** | **Anti-Goals & Low-Point Protocol** | Negative space as an opportunity filter; write your low-point plan while you're strong. Guardrails, not pep talk. |
 
-## ✦ 一套会自转的循环
+## ✦ A loop that turns itself
 
-**记录 → 洞察 → 行动 → 验证**
+**Capture → Insight → Act → Verify**
 
-| 记录 | 洞察 | 行动 | 验证 |
+| Capture | Insight | Act | Verify |
 |---|---|---|---|
-| 讣告、决策、情绪信号、每周复盘——低摩擦捕获真实输入 | AI 唱反调、提炼线索，把噪音聚成使命假设与判断偏差 | 每周收敛成 ≤3 个下一步，只留会推动北极星的那几件 | 决策到期对账、技能要证据背书——用事实校准，而非自我感觉 |
+| Eulogy, decisions, emotional signals, weekly reviews—low-friction capture of real inputs | AI pushes back and distills clues, turning noise into mission hypotheses and judgment biases | Each week converges to ≤3 next steps—only the ones that move your North Star | Decisions reconcile on their due date; skills need evidence—calibrated by facts, not feelings |
 
-## 🔒 你的一生，不该躺在别人的服务器上
+## 🔒 Your life shouldn't live on someone else's server
 
-- **本地存储，永不上云** — 全部数据是本地一个 SQLite 文件，只在你的机器上。
-- **自带模型密钥** — 填你自己的 API Key，隐私你留、成本你控；密钥只写本地。
-- **一键导出 · 整库迁移** — 导出 JSON，或整库复制一个文件搬到新机器，像 Obsidian 搬 vault。
-- **无锁定** — 数据格式开放、可随时带走。停止付费，数据依然是你的。
+- **Local storage, never in the cloud** — all your data is one local SQLite file, only on your machine.
+- **Bring your own model key** — add your own API key; privacy stays yours, cost stays yours; the key is written only locally.
+- **One-click export · full migration** — export JSON, or copy the whole database as one file to a new machine, like moving an Obsidian vault.
+- **No lock-in** — open format, take it anytime. Stop paying and the data is still yours.
 
-## 🧠 用你信任的模型，填你自己的 Key
+## 🧠 Use the model you trust — plug in your own key
 
-在设置里任选服务商，粘贴你自己的 API Key 即可——密钥只存本地：
+Pick a provider in Settings and paste your own API key—the key stays local:
 
-`OpenAI GPT` · `Anthropic Claude` · `DeepSeek` · `Kimi (Moonshot)` · `GLM (智谱)`
+`OpenAI GPT` · `Anthropic Claude` · `DeepSeek` · `Kimi (Moonshot)` · `GLM (Zhipu)`
 
-## 🚀 五分钟上手
+## 🚀 Up and running in 5 minutes
 
-1. **下载并安装** — 上方选 Windows / macOS，下载本地应用。
-2. **创建账户** — 首次打开创建你自己的本地账户，数据从空白开始。
-3. **选模型填 Key** — 设置 → AI 配置，选服务商、粘贴 API Key。
-4. **写下第一份讣告** — 约 15 分钟，点亮你的北极星，系统开始转动。
+1. **Download & install** — pick Windows / macOS above.
+2. **Create your account** — open the app and set up your own local account; data starts blank.
+3. **Pick a model, add your key** — Settings → AI: choose a provider, paste your API key.
+4. **Write your first eulogy** — ~15 minutes to light up your North Star and set the system in motion.
 
-> 🍎 macOS 首次打开若提示「来自身份不明的开发者」，**右键点图标 → 打开** 即可（当前为未签名版本）。
+> 🍎 On macOS, if the first launch warns "unidentified developer," **right-click the icon → Open** (the build is currently unsigned).
 
-## 💎 定价
+## 💎 Pricing
 
-**本地免费开始。** 一次买断计划中（¥299，即将开放）——**没有订阅，没有云账单。**
+**Free to start, locally.** A one-time buyout is planned (¥299, coming soon)—**no subscription, no cloud bill.**
 
-## ❓ 常见问题
+## ❓ FAQ
 
 <details>
-<summary><b>数据存在哪？会上传吗？</b></summary>
+<summary><b>Where is my data stored? Is it uploaded?</b></summary>
 
-全部数据是你机器上的一个本地 SQLite 文件，永不上云。AI 调用直接从你的机器发往你自己配置的模型服务商，我们不经手、不存储。
+Everything lives in a local SQLite file on your machine, never in the cloud. AI calls go directly from your machine to the model provider you configured—we never touch or store them.
 </details>
 
 <details>
-<summary><b>为什么要自己填 API Key？</b></summary>
+<summary><b>Why do I bring my own API key?</b></summary>
 
-这样隐私归你、成本归你、模型选择归你。你可以用 DeepSeek 这类低成本模型，也可以随时切到 GPT / Claude。
+So privacy, cost and model choice all stay yours. Use a low-cost model like DeepSeek, or switch to GPT / Claude anytime.
 </details>
 
 <details>
-<summary><b>换电脑了，数据怎么办？</b></summary>
+<summary><b>I switched computers—what about my data?</b></summary>
 
-一键导出 JSON，或直接把那个本地数据库文件复制到新机器——像 Obsidian 搬 vault 一样简单。
+Export JSON in one click, or just copy that one local database file to the new machine—as simple as moving an Obsidian vault.
 </details>
 
-## 🛠 技术与隐私
+## 🛠 Tech & privacy
 
-- **本地优先桌面应用**（Electron），数据层为纯本地 SQLite——无云端、无多租户、无账号服务器。
-- **自带模型**：可插拔的 LLM 适配层，兼容 OpenAI 接口与 Anthropic 接口。
-- **数据主权**：开放格式、一键导出、随时带走。
+- **Local-first desktop app** (Electron), with a pure local SQLite data layer—no cloud, no multi-tenant, no account server.
+- **Bring your own model**: a pluggable LLM layer compatible with the OpenAI and Anthropic APIs.
+- **Data sovereignty**: open format, one-click export, take it anytime.
 
 <div align="center">
 <br>
 
-**把人生，活成一个会复利的系统。**
+**Live your life as a system that compounds.**
 
-[⬇ 下载 Windows](https://github.com/AQ-zero/personal-os/releases/latest/download/Personal-OS-Setup.exe) · [⬇ 下载 macOS](https://github.com/AQ-zero/personal-os/releases/latest/download/Personal-OS.dmg) · [🌐 官网](https://aq-zero.github.io/personal-os)
+[⬇ Download for Windows](https://github.com/AQ-zero/personal-os/releases/latest/download/Personal-OS-Setup.exe) · [⬇ Download for macOS](https://github.com/AQ-zero/personal-os/releases/latest/download/Personal-OS.dmg) · [🌐 Website](https://aq-zero.github.io/personal-os)
 
-<sub>© 2026 Personal OS · 一人公司出品</sub>
+<sub>© 2026 Personal OS · Built by a one-person company</sub>
 
 </div>
