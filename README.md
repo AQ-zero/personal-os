@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./cover.svg" alt="Personal OS" width="100%">
+<img src="./personal-os-demo.gif" alt="Personal OS — the compounding personal-growth system" width="860">
 
 <p><b>English</b> &nbsp;·&nbsp; <a href="./README.zh.md">中文</a></p>
 
